@@ -9,14 +9,6 @@ class ContaBancaria {
         this._saldo = saldo;
     }
 
-    get titular(): string {
-        return this._titular;
-    }
-
-    get saldo(): number {
-        return this._saldo;
-    }
-
     depositarDinheiro(valor: number): void {
         if (valor <= 0) {
             console.log("O valor do depósito deve ser maior que zero.");
